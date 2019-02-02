@@ -24,7 +24,23 @@ class ViewController: UIViewController {
         
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard let data = data else { return }
-            print(String(data: data, encoding: .utf8)!)
+            
+            do{
+                //here data received from a network request
+                let jsonResponse = try JSONSerialization.jsonObject(with:
+                    data, options: []) as? [String: Any]
+                
+                guard let jsonArray = jsonResponse?["results"] as? [[String: Any]] else {
+                    return
+                }
+                
+                for case let item in jsonArray {
+                    guard let results = item["title"] as? String else { return }; print(results) // delectus aut autem
+                }
+                
+            } catch let parsingError {
+                print("Error", parsingError)
+            }
         }
         
         task.resume()
