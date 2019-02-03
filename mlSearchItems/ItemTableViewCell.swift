@@ -10,6 +10,10 @@ import UIKit
 
 class ItemTableViewCell: UITableViewCell {
 
+    //MARK: Properties
+    @IBOutlet weak var imageCell: UIImageView!
+    @IBOutlet weak var titleCell: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

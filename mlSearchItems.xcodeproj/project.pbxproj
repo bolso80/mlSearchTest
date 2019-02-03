@@ -15,6 +15,7 @@
 		99120CC222049CFB00203DA1 /* mlSearchItemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99120CC122049CFB00203DA1 /* mlSearchItemsTests.swift */; };
 		99120CCD2204AB5100203DA1 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99120CCC2204AB5100203DA1 /* ItemTableViewCell.swift */; };
 		99120CCF2204ADF900203DA1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99120CCE2204ADF900203DA1 /* Item.swift */; };
+		99120CD3220554FD00203DA1 /* resultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99120CD2220554FD00203DA1 /* resultTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		99120CC322049CFB00203DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99120CCC2204AB5100203DA1 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		99120CCE2204ADF900203DA1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		99120CD2220554FD00203DA1 /* resultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				99120CAC22049CF900203DA1 /* AppDelegate.swift */,
 				99120CAE22049CF900203DA1 /* ViewController.swift */,
+				99120CD2220554FD00203DA1 /* resultTableViewController.swift */,
 				99120CCC2204AB5100203DA1 /* ItemTableViewCell.swift */,
 				99120CB022049CF900203DA1 /* Main.storyboard */,
 				99120CB322049CFA00203DA1 /* Assets.xcassets */,
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99120CD3220554FD00203DA1 /* resultTableViewController.swift in Sources */,
 				99120CCF2204ADF900203DA1 /* Item.swift in Sources */,
 				99120CAF22049CF900203DA1 /* ViewController.swift in Sources */,
 				99120CCD2204AB5100203DA1 /* ItemTableViewCell.swift in Sources */,
