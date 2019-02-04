@@ -12,7 +12,7 @@ class ItemTableViewCell: UITableViewCell {
 
     //MARK: Properties
     @IBOutlet weak var imageCell: UIImageView!
-    @IBOutlet weak var titleCell: UIButton!
+    @IBOutlet weak var titleCell: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()

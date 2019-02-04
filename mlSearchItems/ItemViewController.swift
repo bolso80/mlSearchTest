@@ -11,9 +11,14 @@ import UIKit
 class ItemViewController: UIViewController {
     //MARK: Properties
     
+    var titleStr: String = ""
+    var imageStr: String = ""
+    var priceStr: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
     }
 
     
