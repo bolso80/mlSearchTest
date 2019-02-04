@@ -12,7 +12,8 @@ class ItemTableViewCell: UITableViewCell {
 
     //MARK: Properties
     @IBOutlet weak var imageCell: UIImageView!
-    @IBOutlet weak var titleCell: UITextField!
+    @IBOutlet weak var titleCell: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

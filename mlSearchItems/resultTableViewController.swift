@@ -46,7 +46,7 @@ class resultTableViewController: UITableViewController {
         let itemViewController = storyBoard.instantiateViewController(withIdentifier: "itemViewController") as! ItemViewController
         itemViewController.titleStr = self.gtitles[indexPath.row]
         itemViewController.priceStr = self.price[indexPath.row]
-        itemViewController.searchStr = self.searchStr
+        itemViewController.imageStr = self.images[indexPath.row]
         
         let navController = storyBoard.instantiateViewController(withIdentifier: "itemNavController") as! UINavigationController
         navController.pushViewController(itemViewController, animated: true)
