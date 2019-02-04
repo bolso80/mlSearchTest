@@ -16,6 +16,7 @@
 		99120CCD2204AB5100203DA1 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99120CCC2204AB5100203DA1 /* ItemTableViewCell.swift */; };
 		99120CD3220554FD00203DA1 /* resultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99120CD2220554FD00203DA1 /* resultTableViewController.swift */; };
 		99120CD52207E62500203DA1 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99120CD42207E62500203DA1 /* ItemViewController.swift */; };
+		99120CD722081FFB00203DA1 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99120CD622081FFB00203DA1 /* Singleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		99120CCC2204AB5100203DA1 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		99120CD2220554FD00203DA1 /* resultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultTableViewController.swift; sourceTree = "<group>"; };
 		99120CD42207E62500203DA1 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		99120CD622081FFB00203DA1 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				99120CB322049CFA00203DA1 /* Assets.xcassets */,
 				99120CB522049CFA00203DA1 /* LaunchScreen.storyboard */,
 				99120CB822049CFA00203DA1 /* Info.plist */,
+				99120CD622081FFB00203DA1 /* Singleton.swift */,
 			);
 			path = mlSearchItems;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99120CD3220554FD00203DA1 /* resultTableViewController.swift in Sources */,
+				99120CD722081FFB00203DA1 /* Singleton.swift in Sources */,
 				99120CAF22049CF900203DA1 /* ViewController.swift in Sources */,
 				99120CD52207E62500203DA1 /* ItemViewController.swift in Sources */,
 				99120CCD2204AB5100203DA1 /* ItemTableViewCell.swift in Sources */,

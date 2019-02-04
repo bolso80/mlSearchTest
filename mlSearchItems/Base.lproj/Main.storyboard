@@ -139,6 +139,7 @@
             <objects>
                 <navigationController storyboardIdentifier="navigationTable" automaticallyAdjustsScrollViewInsets="NO" id="TvL-IG-swn" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="gws-E1-Iyq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BrT-Yj-9ih">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -163,7 +164,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="YyD-ks-8UG" kind="relationship" relationship="rootViewController" id="TGD-oz-vMD"/>
+                        <segue destination="YyD-ks-8UG" kind="relationship" relationship="rootViewController" id="eSm-IS-ieH"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nTY-g0-ury" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -21,55 +21,14 @@ class ViewController: UIViewController {
     //MARK: Actions
     @IBAction func searchAction(_ sender: Any) {
 
-        let original = "https://api.mercadolibre.com/sites/MLU/search?q=" + searchText.text!
-        if let encoded = original.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed),
-            let url = URL(string: encoded)
-        {
-            let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-                guard let data = data else { return }
-                
-                do{
-                    //here data received from a network request
-                    let jsonResponse = try JSONSerialization.jsonObject(with:
-                        data, options: []) as? [String: Any]
-                    
-                    guard let jsonArray = jsonResponse?["results"] as? [[String: Any]] else {
-                        return
-                    }
-                    
-                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                    let tableViewController = storyBoard.instantiateViewController(withIdentifier: "resultTableView") as! resultTableViewController
-                    var index = 0
-                    tableViewController.qty = jsonArray.count
-                    for case let item in jsonArray {
-                        guard let title = item["title"] as? String else { return };
-                        guard let thumbnail = item["thumbnail"] as? String else { return };
-                        guard let cur = item["currency_id"] as? String else { return };
-                        guard let price = item["price"] as? Int else { return };
-                        
-                        
-                        tableViewController.gtitles.append(title)
-                        tableViewController.images.append(thumbnail)
-                        tableViewController.price.append(cur + " " + String(price))
-                        
-                        
-                        index = index + 1
-                        print(title) // delectus aut autem
-                    }
-                    tableViewController.tableView.reloadData()
-                    DispatchQueue.main.async {
-                        let navController = storyBoard.instantiateViewController(withIdentifier: "navigationTable") as! UINavigationController
-                        navController.pushViewController(tableViewController, animated: true)
-                        self.present(navController, animated: true, completion: nil)
-                    }
-                    
-                } catch let parsingError {
-                    print("Error", parsingError)
-                }
-            }
-            
-            task.resume()
-        }
+        if searchText.text == "" {return}
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        Singleton.self.sharedInstance.searchStr = searchText.text!
+        let tableViewController = storyBoard.instantiateViewController(withIdentifier: "resultTableView") as! resultTableViewController
+
+        let navController = storyBoard.instantiateViewController(withIdentifier: "navigationTable") as! UINavigationController
+        navController.pushViewController(tableViewController, animated: true)
+        self.present(navController, animated: true, completion: nil)
     }
     
 }
