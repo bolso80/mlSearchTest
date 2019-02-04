@@ -84,17 +84,8 @@
                                             <constraint firstAttribute="height" constant="128" id="yqL-Zi-55U"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6t-cS-moC">
-                                        <rect key="frame" x="100.5" y="213" width="39" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="Ahd-6E-fte"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErI-vJ-r90">
-                                        <rect key="frame" x="20" y="266" width="200" height="20"/>
+                                        <rect key="frame" x="20" y="213" width="200" height="73"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="SVa-4f-4oL"/>
                                         </constraints>
