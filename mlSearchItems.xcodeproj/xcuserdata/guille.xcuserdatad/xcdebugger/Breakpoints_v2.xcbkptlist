@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571034296.312602"
+            timestampString = "571035332.241203"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571034296.313251"
+            timestampString = "571035332.241384"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571034296.313761"
+            timestampString = "571035332.241522"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132">
+            startingLineNumber = "142"
+            endingLineNumber = "142">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -72,11 +72,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571034296.3142689"
+            timestampString = "571035332.2416511"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132">
+            startingLineNumber = "142"
+            endingLineNumber = "142">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -86,11 +86,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571034296.314718"
+            timestampString = "571035332.2417541"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132">
+            startingLineNumber = "142"
+            endingLineNumber = "142">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -100,11 +100,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571034296.315147"
+            timestampString = "571035332.2418571"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132">
+            startingLineNumber = "142"
+            endingLineNumber = "142">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -146,11 +146,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571034296.315557"
+            timestampString = "571035332.241961"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132">
+            startingLineNumber = "142"
+            endingLineNumber = "142">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -160,11 +160,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571034296.3159781"
+            timestampString = "571035332.242064"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132">
+            startingLineNumber = "142"
+            endingLineNumber = "142">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -174,7 +174,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571034296.316424"
+            timestampString = "571035332.242166"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
@@ -190,11 +190,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/ViewController.swift"
-            timestampString = "571034296.316919"
+            timestampString = "571035332.242269"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "searchAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -206,7 +206,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571034296.317026"
+            timestampString = "571035332.242926"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -222,7 +222,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571034296.317696"
+            timestampString = "571035332.243054"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -238,11 +238,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571034296.318293"
+            timestampString = "571035332.24317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "chargeTable()"
             landmarkType = "7">
          </BreakpointContent>
@@ -270,7 +270,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571034296.31884"
+            timestampString = "571035332.243342"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
@@ -286,7 +286,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571034296.319311"
+            timestampString = "571035332.2434649"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "84"
@@ -334,11 +334,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571034296.3197761"
+            timestampString = "571035332.243569"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "chargeTable()"
             landmarkType = "7">
          </BreakpointContent>
@@ -350,11 +350,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571034296.320219"
+            timestampString = "571035332.243683"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "chargeTable()"
             landmarkType = "7">
          </BreakpointContent>

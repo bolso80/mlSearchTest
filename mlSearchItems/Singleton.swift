@@ -20,5 +20,6 @@ final class Singleton {
     //MARK: Local Variable
     
     var searchStr : String = ""
+    var errorMsg : String = ""
     
 }

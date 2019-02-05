@@ -83,6 +83,7 @@ class resultTableViewController: UITableViewController {
         {
             let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
                 guard let data = data else {
+                    Singleton.sharedInstance.errorMsg = "VERIFIQUE SU CONEXION"
                     group.leave()
                     return
                 }
@@ -118,6 +119,8 @@ class resultTableViewController: UITableViewController {
                     
                 } catch let parsingError {
                     print("Error", parsingError)
+                    Crashlytics.sharedInstance().recordError(parsingError)
+                    Singleton.sharedInstance.errorMsg = "INTENTE SU BUSQUEDA NUEVAMENTE"
                     group.leave()
                 }
             }
@@ -126,6 +129,13 @@ class resultTableViewController: UITableViewController {
         }
         
         group.wait()
+        if Singleton.sharedInstance.errorMsg != ""
+        {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyBoard.instantiateViewController(withIdentifier: "initView")
+            
+            self.present(viewController, animated: true, completion: nil)
+        }
         self.tableView.reloadData()
     }
 }

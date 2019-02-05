@@ -13,10 +13,18 @@ class ViewController: UIViewController {
     //MARK: Properties
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var searchText: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.errorLabel.isHidden = true
+        if (Singleton.sharedInstance.errorMsg != "")
+        {
+            self.errorLabel.text = Singleton.sharedInstance.errorMsg
+            Singleton.sharedInstance.errorMsg = ""
+            self.errorLabel.isHidden = false
+        }
     }
 
     //MARK: Actions
