@@ -14,6 +14,7 @@ class resultTableViewController: UITableViewController {
     var gtitles: [String] = []
     var images: [String] = []
     var price: [String] = []
+    var ids: [String] = []
     var qty: Int = 0
     
     override func viewDidLoad() {
@@ -101,15 +102,27 @@ class resultTableViewController: UITableViewController {
                     var index = 0
                     self.qty = jsonArray.count
                     for case let item in jsonArray {
-                        guard let title = item["title"] as? String else { continue };
-                        guard let thumbnail = item["thumbnail"] as? String else { continue };
-                        guard let cur = item["currency_id"] as? String else { continue };
-                        guard let price = item["price"] as? Int else { continue };
+                        guard let id = item["id"] as? String else {
+                            self.makeError(code: 1, desc: "parseId")
+                            continue };
+                        guard let title = item["title"] as? String else {
+                            self.makeError(code: 2, desc: "parseTitleId:" + id)
+                            continue };
+                        guard let thumbnail = item["thumbnail"] as? String else {
+                            self.makeError(code: 3, desc: "parseThumbnailId:" + id)
+                            continue };
+                        guard let cur = item["currency_id"] as? String else {
+                            self.makeError(code: 4, desc: "parseCurrencyId:" + id)
+                            continue };
+                        guard let price = item["price"] as? Int else {
+                            self.makeError(code: 5, desc: "parsePriceId:" + id)
+                            continue };
                         
                         
                         self.gtitles.append(title)
                         self.images.append(thumbnail)
                         self.price.append(cur + " " + String(price))
+                        self.ids.append(id)
                         
                         
                         index = index + 1
@@ -118,7 +131,6 @@ class resultTableViewController: UITableViewController {
                     group.leave()
                     
                 } catch let parsingError {
-                    print("Error", parsingError)
                     Crashlytics.sharedInstance().recordError(parsingError)
                     Singleton.sharedInstance.errorMsg = "INTENTE SU BUSQUEDA NUEVAMENTE"
                     group.leave()
@@ -137,5 +149,11 @@ class resultTableViewController: UITableViewController {
             self.present(viewController, animated: true, completion: nil)
         }
         self.tableView.reloadData()
+    }
+    
+    func makeError(code: Int, desc: String)
+    {
+        let errorTemp = NSError(domain:"chargeTable" + desc, code:code, userInfo:nil)
+        Crashlytics.sharedInstance().recordError(errorTemp)
     }
 }

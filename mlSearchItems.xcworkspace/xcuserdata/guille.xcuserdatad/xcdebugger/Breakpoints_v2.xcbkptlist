@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mlSearchItems/resultTableViewController.swift"
-            timestampString = "571035332.243788"
+            timestampString = "571037001.622736"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "chargeTable()"
             landmarkType = "7">
          </BreakpointContent>
