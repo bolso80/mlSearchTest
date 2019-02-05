@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Crashlytics
 
 class resultTableViewController: UITableViewController {
     var searchStr: String = ""
@@ -59,7 +60,7 @@ class resultTableViewController: UITableViewController {
         print("section: \(indexPath.section)")
         print("row: \(indexPath.row)")
         print("title: " + self.gtitles[indexPath.row])
-        
+        Crashlytics.sharedInstance().setObjectValue(self.gtitles[indexPath.row], forKey: "selectItem")
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let itemViewController = storyBoard.instantiateViewController(withIdentifier: "itemViewController") as! ItemViewController
         itemViewController.titleStr = self.gtitles[indexPath.row]
@@ -84,7 +85,6 @@ class resultTableViewController: UITableViewController {
                 guard let data = data else {
                     group.leave()
                     return
-                    
                 }
                 
                 do{

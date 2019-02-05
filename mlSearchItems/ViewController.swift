@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Crashlytics
 
 class ViewController: UIViewController {
     //MARK: Properties
@@ -20,8 +21,8 @@ class ViewController: UIViewController {
 
     //MARK: Actions
     @IBAction func searchAction(_ sender: Any) {
-
         if searchText.text == "" {return}
+        Crashlytics.sharedInstance().setObjectValue(searchText.text, forKey: "search_UI")
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         Singleton.self.sharedInstance.searchStr = searchText.text!
         let tableViewController = storyBoard.instantiateViewController(withIdentifier: "resultTableView") as! resultTableViewController
@@ -34,7 +35,7 @@ class ViewController: UIViewController {
 }
 
 extension UIImageView {
-    func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {  // for swift 4.2 syntax just use ===> mode: UIView.ContentMode
+    func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {  
         contentMode = mode
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard
@@ -48,7 +49,8 @@ extension UIImageView {
             }
             }.resume()
     }
-    func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {  // for swift 4.2 syntax just use ===> mode: UIView.ContentMode
+    func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
+        Crashlytics.sharedInstance().setObjectValue(link, forKey: "downloadImage")
         guard let url = URL(string: link) else { return }
         downloaded(from: url, contentMode: mode)
     }
